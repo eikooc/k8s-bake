@@ -158,7 +158,9 @@ export class HelmRenderEngine extends RenderEngine {
          }
       }
 
-      const overridesJsonInput = core.getInput('overridesJson', {required: false})
+      const overridesJsonInput = core.getInput('overridesJson', {
+         required: false
+      })
       if (!!overridesJsonInput) {
          core.debug('Adding overrides inputs')
          const overrides = overridesJsonInput.split('\n')
