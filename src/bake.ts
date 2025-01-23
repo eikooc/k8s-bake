@@ -157,6 +157,19 @@ export class HelmRenderEngine extends RenderEngine {
             })
          }
       }
+
+      const overridesJsonInput = core.getInput('overridesJson', {required: false})
+      if (!!overridesJsonInput) {
+         core.debug('Adding overrides inputs')
+         const overrides = overridesJsonInput.split('\n')
+         if (overrides.length > 0) {
+            const overrideValues = this.getOverrideValues(overrides)
+            overrideValues.forEach((overrideValue) => {
+               args.push('--set-json')
+               args.push(`${overrideValue.name}=${overrideValue.value}`)
+            })
+         }
+      }
       return args
    }
 
