@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.2.1] - 2025-01-23
+
+### Changed
+
+- Add overridesJson input
+
 ## [3.0.1] - 2025-01-23
 
 ### Changed
