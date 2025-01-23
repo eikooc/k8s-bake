@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.2.4] - 2025-01-23
+
+### Added
+
+- Add lib/index.js
+
 ## [3.2.1] - 2025-01-23
 
 ### Changed
