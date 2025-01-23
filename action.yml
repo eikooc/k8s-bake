@@ -18,6 +18,9 @@ inputs:
    overrides:
       description: 'Relevant if renderEngine == helm. Override values to set.'
       required: false
+   overridesJson:
+      description: 'Relevant if renderEngine == helm. Override values to set.'
+      required: false
    releaseName:
       description: 'Relevant if renderEngine == helm. Release name to be used for Helm option.'
       required: false

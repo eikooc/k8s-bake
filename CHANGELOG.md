@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.0.1] - 2025-01-23
+
+### Changed
+
+- Add overridesJson config
+
 ## [3.0.1] - 2024-09-06
 
 ### Changed
